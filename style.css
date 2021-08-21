@@ -1,0 +1,26 @@
+body {
+  background-color: FFFFF;
+}
+.div1 { grid-area: header;
+background-color: red;
+}
+.div2 { grid-area: Menu;
+background-color: purple;
+}
+.div3 { grid-area: Main;
+background-color: black;
+}
+.div4 { grid-area: Footer;
+background-color: yellow;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header'
+  'Menu Main Main Main'
+  'Footer Footer Footer Footer';
+  grid-gap: 20px;
+  background-color: blue;
+  padding: 20px;
+}
