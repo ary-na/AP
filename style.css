@@ -1,26 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: FFFFF;
 }
-.div1 { grid-area: header;
-background-color: red;
+
+.header {
+  grid-area: Header;
 }
-.div2 { grid-area: Menu;
-background-color: purple;
+
+.menu {
+  grid-area: Menu;
 }
-.div3 { grid-area: Main;
-background-color: black;
+
+.main {
+  grid-area: Main;
 }
-.div4 { grid-area: Footer;
-background-color: yellow;
+
+.footer {
+  grid-area: Footer;
 }
+
 
 .grid-container {
   display: grid;
   grid-template-areas:
-  'header header header header'
-  'Menu Main Main Main'
+  'Header Header Header Header'
+  'Menu Menu Main Main'
   'Footer Footer Footer Footer';
-  grid-gap: 20px;
-  background-color: blue;
-  padding: 20px;
+  grid-gap: 0px;
+  background-color: white;
+  margin: 0;
 }
