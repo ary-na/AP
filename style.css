@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
 body {
   max-width: 1500px;
   margin-left: auto;
@@ -12,31 +18,43 @@ body {
 nav {
   grid-area: Nav;
   background-color: red;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
 }
 
 main {
   grid-area: Main;
   background-color: blue;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
 }
 
 .content1 {
   grid-area: Content1;
   background-color: green;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
 }
 
 .content2 {
   grid-area: Content2;
   background-color: yellow;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
 }
 
 .content3{
   grid-area: Content3;
   background-color: purple;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
 }
 
 footer {
   grid-area: Footer;
   background-color: black;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
 }
 
 
